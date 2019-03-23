@@ -3,10 +3,11 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    id("java")
     kotlin(module = "jvm") version "1.3.21"
     id("application")
-    id("com.github.johnrengelman.shadow") version "4.0.4"
     id("org.openjfx.javafxplugin") version "0.0.7"
+    id("com.github.johnrengelman.shadow") version "4.0.4"
 }
 
 val versionName = "2019.1.0-humber"
